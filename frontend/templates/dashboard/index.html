@@ -5,20 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dashboard</title>
   </head>
-  <link rel="stylesheet" href="style.css" />
+  {% load static %}
+  <link rel="stylesheet" href="{% static 'dashboard/css/style.css' %}" />
 
   <body>
     <!------------------------------------------------------------------log in page for admin-------------------------->
 
     <div class="logo_container">
       <div class="logo">
-        <img id="logo" src="img/hl (1).jpg" alt="logo" />
+        <img id="logo" src="{% static 'dashboard/img/logo.jpg' %}" alt="logo" />
       </div>
     </div>
     <div class="login_box_container">
       <div class="login_box">
         <div class="avt_container item">
-          <img id="avatar_img" src="img/avatar.png" alt="image" />
+          <img id="avatar_img" src="{% static 'dashboard/img/avatar.png' %}" alt="image" />
         </div>
         <div class="item"> 
              <h2>Admin Login</h2>
